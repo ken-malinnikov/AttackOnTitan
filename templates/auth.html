@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<form action="/">
+
+    <table style="background:silver;padding:10pt">
+        <tr style="display:{{ display }}">
+            <td>Name:</td>
+            <td><input type="text" name="userName"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="userEmail"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="userPassword"></td>
+        </tr>
+       <tr style="display:{{ display }}">
+            <td>Password confirmetion:</td>
+            <td><input type="password" name="userPassConfirm"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Ok</button>
+            </td>
+        </tr>
+    </table>
+
+
+</form>
+

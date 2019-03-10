@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{title}}</title>
     {% load staticfiles %}
-    <link rel="stylesheet"
-          href="{% static " css
-    /style.css" %}"
-    type = "text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 
 </head>
 <body>
 
-<h1>Hello</h1>
-<a href="titan">Picture</a>
+<h1>{{ title }}</h1>
+
+<div style="padding:10pt">
+    <a href="{{ linkAddress }}">{{linkName}}</a>
+
+</div>
+
+<br />
+{{ content }}
 
 </body>
 </html>
